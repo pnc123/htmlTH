@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Formulas</title>
+	<style type="text/css">
+		:root{
+			--xyz : 0;
+            --light1:60%;
+            --light2:90%;
+		}
+		body{
+			background-color: cyan;
+		}
+
+		.heading{
+			text-align: center;
+			 
+		}
+
+		#m{
+			width: 30%;
+			background-color: hsl(var(--xyz),90%,var(--light2));
+			height: 400px;
+			float: left;
+			margin-left: 32px;
+		}
+
+		input{
+			background-color: green;
+			width: 100px;
+		}
+		nav{
+			text-align: center;
+			background-color:hsl(var(--xyz),90%,var(--light1));
+			height: 60px;
+		}
+
+		.footer{
+			text-align: center;
+
+		}
+		p{
+			margin-left: 20px;
+		}
+		h5{
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			<h1 class="heading">Maths Formulas</h1>
+		</div>
+		<nav><br>
+			<input type="button" value="Red" onclick="r()">
+			<input type="button" value="Purple" onclick="p()">
+			<input type="button" value="Blue" onclick="y()">
+			<input type="button" value="Light" onclick="d(0)">
+			<input type="button" value="Dark" onclick="d(1)">
+		</nav><br>
+		<div class="mid">
+			<div class="first" id="m">
+				<h2 align="center">Compound Interest Formula</h2>
+				<p>Simple Interest = (P × R × T) ÷ 100</p>
+				<p>Amount = SI + P</p>
+				<p>A = {(P × R × T) ÷ 100} + P</p>
+				<h5>Where</h5>
+				<p>SI	Simple Interest</p>
+				<p>A	Amount/Future Value</p>
+				<p>P	Principal Amount</p>
+				<p>R	Rate of Interest per annum</p>
+				<p>T	Time in years</p>
+				
+			</div>
+			<div class="second" id="m">
+				<h2 align="center">Compound Interest Formula</h2>
+				<p>Simple Interest = (P × R × T) ÷ 100</p>
+				<p>Amount = SI + P</p>
+				<p>A = {(P × R × T) ÷ 100} + P</p>
+				<h5>Where</h5>
+				<p>SI	Simple Interest</p>
+				<p>A	Amount/Future Value</p>
+				<p>P	Principal Amount</p>
+				<p>R	Rate of Interest per annum</p>
+				<p>T	Time in years</p>
+			</div>
+			<div class="third" id="m">
+				<h2 align="center">Compound Interest Formula</h2>
+				<p>Simple Interest = (P × R × T) ÷ 100</p>
+				<p>Amount = SI + P</p>
+				<p>A = {(P × R × T) ÷ 100} + P</p>
+				<h5>Where</h5>
+				<p>SI	Simple Interest</p>
+				<p>A	Amount/Future Value</p>
+				<p>P	Principal Amount</p>
+				<p>R	Rate of Interest per annum</p>
+				<p>T	Time in years</p>
+			</div>
+		</div>
+
+		<div class="foot">
+			<p class="footer">Copyright@praveen.com</p>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	function r(){
+		document.documentElement.style.setProperty("--xyz",0);
+	}
+
+	function p(){
+		document.documentElement.style.setProperty("--xyz",301);
+	}
+
+	function y(){
+		document.documentElement.style.setProperty("--xyz",225);
+	}
+
+	function d(s)
+        {
+           if(s==0)
+           {
+            document.documentElement.style.setProperty("--light1",'60%');
+            document.documentElement.style.setProperty("--light2",'90%');
+           }
+           else
+           {
+            document.documentElement.style.setProperty("--light1",'20%');
+            document.documentElement.style.setProperty("--light2",'50%');
+           }
+        }
+</script>
+
+ 
+</body>
+</html>
